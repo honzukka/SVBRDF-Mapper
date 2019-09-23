@@ -22,4 +22,4 @@ Unfortunately, the resulting parameter format is non-standard and unsupported by
 
  ![anim02](anim02.gif)
 
- *For higher resolution, see https://youtu.be/XacVdo_5m6M (can be looped by right-clicking on the video)*
+ *For higher resolution, see [YouTube video](https://youtu.be/XacVdo_5m6M) (can be looped by right-clicking)*
