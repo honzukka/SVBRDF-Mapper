@@ -35,3 +35,5 @@ The core of the program is implemented in TensorFlow and is based on non-linear 
 Here is a visualization of the optimization process:
 
 ![anim03](anim03.gif)
+
+*These images have been rendered by using a fixed, centered point light and Anisotropic GGX parameters at various epochs.*
