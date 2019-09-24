@@ -10,7 +10,7 @@ Unfortunately, the resulting parameter format is non-standard and unsupported by
 
  The goal of this project is therefore to find a way to convert the custom BRDF parameters to a standard set of parameters. We have chosen Anisotropic GGX.
 
- # Results
+ # Blah
 
  For each material separately, our program finds Anisotropic GGX parameters which give an appearance that is sufficiently close to the reference. These parameters can be directly imported into Blender and used with a correctly configured Anisotropic GGX shader.
 
