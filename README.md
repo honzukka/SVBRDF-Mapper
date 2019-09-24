@@ -1,5 +1,3 @@
-# And now?
-
 This project was done at Aalto University under the supervision of Jaakko Lehtinen. Source code is not yet available.
 
 # Motivation
@@ -10,12 +8,12 @@ Unfortunately, the resulting parameter format is non-standard and unsupported by
 
 ![motivation](motivation.png)
 
- The goal of this project is therefore to find a way to convert the custom BRDF parameters to a standard set of parameters. We have chosen Anisotropic GGX.
+The goal of this project is therefore to find a way to convert the custom BRDF parameters to a standard set of parameters. We have chosen Anisotropic GGX.
 
- ## Results
+# Results 
 
- For each material separately, our program finds Anisotropic GGX parameters which give an appearance that is sufficiently close to the reference. These parameters can be directly imported into Blender and used with a correctly configured Anisotropic GGX shader.
+For each material separately, our program finds Anisotropic GGX parameters which give an appearance that is sufficiently close to the reference. These parameters can be directly imported into Blender and used with a correctly configured Anisotropic GGX shader.
 
- ![anim02](anim02.gif)
+![anim02](anim02.gif)
 
- *For higher resolution, see [YouTube video](https://youtu.be/XacVdo_5m6M) (can be looped by right-clicking)*
+*For higher resolution, see [YouTube video](https://youtu.be/XacVdo_5m6M) (can be looped by right-clicking)*
