@@ -8,7 +8,7 @@ Unfortunately, the resulting parameter format is non-standard and unsupported by
 
 ![motivation](motivation.png)
 
-The goal of this project is therefore to find a way to convert the custom BRDF parameters to a standard set of parameters. We have chosen Anisotropic GGX.
+The goal of this project is therefore to find a way to convert the custom BRDF parameters to a standard set of parameters, in our case more specifically to Anisotropic GGX parameters.
 
 # Results 
 
@@ -24,13 +24,13 @@ The core of the program is implemented in TensorFlow and is based on non-linear 
 
 ![schema](schema.png)
 
-**The main problem is that the mapping cannot be uniquely determined** - for one set of Aittala parameters there can be many sets of Anisotropic GGX parameters which give the same appearance under a given lighting condition. Here is a more thorough breakdown of our approach:
+**The main problem is that the mapping cannot be uniquely determined** - for one set of Aittala parameters there can be many sets of Anisotropic GGX parameters which give the same appearance under a given lighting condition. We solve the problem by trying to match the parameters under many lighting conditions at once. Here is a more thorough breakdown of our approach:
 
 1. First, initial Anisotropic GGX parameters are created as a deterministic guess function of the Aittala parameters.
-2. Pairs of reference and guess materials are rendered under about 1000 different lighting conditions. 
-3. Loss function is computed as an L2 distance between all reference renderings and all guess renderings combined.
-4. A finite difference of the guess renderings is added to the loss function to ensure that the optimizer makes smooth changes. This term is attenuated in final stages of the optimization in order to restore sharpness.
-5. After an update of the Anisotropic GGX parameters is computed, steps 2)-5) are repeated until a stopping condition is reached.
+2. These parameters are used to render pairs of reference and guess images under more than 100 different lighting conditions. 
+3. Loss function is computed as an L2 distance between all reference images and all guess images combined.
+4. A finite difference of the guess images is added to the loss function to ensure that the optimizer makes smooth changes. This term is attenuated in final stages of the optimization in order to restore sharpness.
+5. After an update of the Anisotropic GGX parameters is computed, steps 2.-5. are repeated until the stopping condition is reached.
 
 Here is a visualization of the optimization process:
 
