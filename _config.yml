@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
 title: "SVBRDF Mapper"
-description: "description"
+description: "Anisotropic GGX BRDF [left] vs. custom BRDF [right]"
 logo: "anim01.gif"
