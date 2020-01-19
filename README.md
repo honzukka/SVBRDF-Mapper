@@ -1,4 +1,4 @@
-This project was done at Aalto University under the supervision of Jaakko Lehtinen. Source code is not yet available.
+This project was done at Aalto University under the supervision of [Jaakko Lehtinen](https://users.aalto.fi/~lehtinj7/). Source code is not yet available.
 
 # Motivation
 
